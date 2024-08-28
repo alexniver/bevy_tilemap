@@ -49,7 +49,7 @@ fn setup_camera(mut comds: Commands) {
 
 fn mesh(mut commands: Commands, mut meshes: ResMut<Assets<Mesh>>, mut windows: Query<&mut Window>) {
     let mut window = windows.single_mut();
-    window.mode = WindowMode::Fullscreen;
+    // window.mode = WindowMode::Fullscreen;
     let mut mesh = Mesh::new(
         PrimitiveTopology::TriangleList,
         RenderAssetUsages::RENDER_WORLD,
@@ -58,9 +58,9 @@ fn mesh(mut commands: Commands, mut meshes: ResMut<Assets<Mesh>>, mut windows: Q
     window.resolution.set(2560., 1440.);
 
     // let width = 2560.;
-    // let height = 1440.;
-    let width = 2.;
-    let height = 2.;
+    // let height = 1420.;
+    let width = 200.;
+    let height = 200.;
 
     println!("width: {}, height: {}", width, height);
 
