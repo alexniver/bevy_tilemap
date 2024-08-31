@@ -77,7 +77,7 @@ fn setup(
         [-0.5, 0.5, 0.0],
     ];
 
-    let uvs = vec![[0.0, 0.0], [1.0, 0.0], [1.0, 1.0], [0.0, 1.0]];
+    let uvs = vec![[0.0, 1.0], [1.0, 1.0], [1.0, 0.0], [0.0, 0.0]];
 
     // Set the position attribute
     mesh.insert_attribute(ATTRIBUTE_POS, v_pos);
